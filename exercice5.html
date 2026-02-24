@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiche de présentation</title>
+</head>
+<body>
+
+    <h1>Ma fiche de présentation</h1>
+
+    <p id="nomComplet">...</p>
+    <p id="age">...</p>
+    <p id="ville">...</p>
+    <p id="presentation">...</p>
+
+<script>
+    
+    let prenom = "Mohamed";
+    let nom    = "El Amrani";
+    let age    = 27;
+    let ville  = "Casablanca";
+    document.getElementById("nomComplet").innerHTML = 
+        prenom + " <strong>" + nom.toUpperCase() + "</strong>";
+
+    document.getElementById("age").innerHTML = 
+        "J'ai <strong>" + age + "</strong> ans";
+
+    document.getElementById("ville").innerHTML = 
+        "J'habite à <strong>" + ville + "</strong>";
+
+    document.getElementById("presentation").innerHTML = 
+        "Je m'appelle <strong>" + prenom + " " + nom + "</strong>, " +
+        "j'ai <strong>" + age + "</strong> ans et j'habite à <strong>" + ville + "</strong>.";
+    document.title = "Fiche de " + prenom;
+</script>
+
+</body>
+</html>

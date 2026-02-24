@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 4 - Interactions utilisateur</title>
+</head>
+<body>
+
+<script>
+
+    let prenom = prompt("Quel est votre prénom ?");
+
+    // 2. Demander l'âge
+    let age = prompt("Quel est votre âge ?");
+
+    // 3. Convertir l'âge en nombre
+    age = Number(age);
+
+    alert("Bonjour " + prenom + " ! Vous êtes né(e) vers " + anneeNaissance + ".");
+
+    let voirConsole = confirm("Afficher vos informations dans la console ?");
+
+    if (voirConsole === true) {
+        console.log("Prénom : " + prenom);
+        console.log("Âge : " + age);
+        console.log("Année de naissance approximative : " + anneeNaissance);
+    }
+
+</script>
+
+</body>
+</html>

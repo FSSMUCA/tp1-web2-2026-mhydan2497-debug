@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 3 - Mini calculatrice prix boutique</title>
+</head>
+<body>
+
+<script>
+    
+    const TAUX_TVA = 0.20;
+
+    let prixHT = 150;
+
+    let prixTTC = prixHT + (TAUX_TVA * prixHT);
+
+    console.log(`Prix HT       : ${prixHT} €`);
+    console.log(`TVA (${TAUX_TVA * 100}%)   : ${TAUX_TVA * prixHT} €`);
+    console.log(`Prix TTC      : ${prixTTC} €`);
+
+    console.log("");
+    console.log(`Prix HT : ${prixHT} € | TVA (20%) : ${TAUX_TVA * prixHT} € | Prix TTC : ${prixTTC} €`);
+
+</script>
+
+</body>
+</html>
